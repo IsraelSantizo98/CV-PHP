@@ -1,0 +1,82 @@
+:root {
+  --colorPrimario: #009688;
+  --colorSecundario: #ffffff;
+  --colorTerciario: #f1f1f1;
+  --colorTitulo: #757575;
+  --colorDivision: #eeeeee;
+}
+.wrapper {
+  width: 1375px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+body {
+  background-color: var(--colorTerciario);
+}
+/**/
+.main {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-areas: "left right1" "left right2";
+  grid-gap: 20px;
+}
+.left {
+  grid-area: left;
+  background-color: var(--colorSecundario);
+}
+
+/*profile*/
+.profile {
+  /* margin: 0;
+  padding: 0; */
+  height: 400px;
+  background-image: url(../assets/img/profile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Skill*/
+.division {
+  color: var(--colorDivision);
+}
+.skill {
+  height: 15px;
+  background-color: var(--colorTerciario);
+  border-radius: 25px;
+}
+.colorGreen {
+  height: inherit;
+  width: 90%;
+  background-color: var(--colorPrimario);
+  border-radius: 25px;
+}
+/*Lado derecho 1*/
+.right1 {
+  grid-area: right1;
+  background-color: var(--colorSecundario);
+}
+.right1Icon {
+  display: flex;
+  align-items: center;
+}
+.right1Icon img {
+  margin-right: 10px;
+}
+.education {
+  grid-area: right2;
+  background-color: var(--colorSecundario);
+}
+.educationIcon {
+  display: flex;
+  align-items: center;
+}
+.educationIcon img {
+  margin-right: 10px;
+}
+/*Footer*/
+.footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--colorPrimario);
+}
