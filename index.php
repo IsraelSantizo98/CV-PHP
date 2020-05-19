@@ -107,6 +107,13 @@
         </div>
       </section>
     </div>   
-    <section class="footer">Footer</section>
+    <section class="footer">
+    <div class="footerContainer">
+    <div class="container">
+      <p>Find me on social media</p>
+      <p>Powered by Intecap</p>
+    </div>
+    </div>
+    </section>
   </body>
 </html>

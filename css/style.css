@@ -8,10 +8,12 @@
 .wrapper {
   width: 1375px;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 body {
   background-color: var(--colorTerciario);
+  margin: 0;
+  padding: 0;
 }
 /**/
 .main {
@@ -35,6 +37,52 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.blockIcon {
+  display: block;
+}
+.maletaIcon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/icon/maleta.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.casaIcon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/icon/casa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.correoIcon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/icon/correo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.profileName {
+  display: flex;
+  /*
+  align-items: ;
+  justify-items: end;
+  justify-items: end; */
+  /* position: absolute;
+  left: 0;
+  bottom: 0; */
+}
+/* .profileName::before {
+  content: " » ";
+}
+.profileName::before {
+  content: " ";
+} */
 /*Skill*/
 .division {
   color: var(--colorDivision);
@@ -44,11 +92,30 @@ body {
   background-color: var(--colorTerciario);
   border-radius: 25px;
 }
+.skillIcon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/icon/skills.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .colorGreen {
   height: inherit;
   width: 90%;
   background-color: var(--colorPrimario);
   border-radius: 25px;
+}
+/*Languages*/
+.planetaIcon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/icon/planeta.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*Lado derecho 1*/
 .right1 {
@@ -62,21 +129,56 @@ body {
 .right1Icon img {
   margin-right: 10px;
 }
+/*Right 2*/
 .education {
   grid-area: right2;
   background-color: var(--colorSecundario);
+  /* margin-bottom: 10px; */
+}
+.educationContainer {
+  padding: 20px;
 }
 .educationIcon {
   display: flex;
   align-items: center;
 }
-.educationIcon img {
+.educationIconEducacion {
   margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../assets/icon/educacion.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.eduactionIconCalendar {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../assets/icon/calendario.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*Footer*/
 .footer {
   width: 100%;
-  margin: 0;
+  margin-top: 25px;
   padding: 0;
   background-color: var(--colorPrimario);
+}
+.footerContainer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.iconContainer {
+  display: flex;
+}
+.footerContainer a {
+  text-decoration: none;
+}
+.footerContainer span {
+  color: var(--colorSecundario);
 }
