@@ -294,3 +294,12 @@ hr {
 .footerContainer span {
   color: var(--colorSecundario);
 }
+/*Inicia ingreso de usurario*/
+/* .imageIngreso{
+  height: 100%;
+  width: 100%;
+  background-color: brown;
+  background-image: url(../assets/img/ingreso.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+} */
